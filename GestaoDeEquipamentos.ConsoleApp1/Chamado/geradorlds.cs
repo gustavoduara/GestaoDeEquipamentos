@@ -1,8 +1,9 @@
-﻿namespace GestaoDeEquipamentos.ConsoleApp;
+﻿namespace GestaoDeEquipamentos.ConsoleApp.Compartilhado;
 
 public static class GeradorIds
 {
     public static int IdEquipamentos = 0;
+    public static int IdChamados = 0;
 
     public static int GerarIdEquipamento()
     {
@@ -11,8 +12,10 @@ public static class GeradorIds
         return IdEquipamentos;
     }
 
-    public static Guid GerarGuidEquipamento()
+    public static int GerarIdChamado()
     {
-        return Guid.NewGuid();
+        IdChamados++;
+
+        return IdChamados;
     }
 }
