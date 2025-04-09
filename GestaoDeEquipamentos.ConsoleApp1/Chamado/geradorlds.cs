@@ -18,4 +18,9 @@ public static class GeradorIds
 
         return IdChamados;
     }
+
+    public static int GerarIdFabricante()
+    {
+        return IdEquipamentos;
+    }
 }
